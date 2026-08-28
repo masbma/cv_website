@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Miguel Sepulveda</title>
+    <!-- FontAwesome für die Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-dark: #2A4064;
+            --accent-orange: #DF7E2C;
+            --text-light: #F4F4F4;
+            --text-dark: #333333;
+            --text-gray: #666666;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            color: var(--text-dark);
+            line-height: 1.5;
+            display: flex;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .resume-wrapper {
+            display: flex;
+            background-color: #fff;
+            max-width: 900px;
+            width: 100%;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        /* --- Linke Spalte (Sidebar) --- */
+        .sidebar {
+            width: 35%;
+            background-color: var(--primary-dark);
+            color: var(--text-light);
+            padding: 3rem 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header-cv {
+            font-size: 2rem;
+            letter-spacing: 4px;
+            margin-bottom: 1rem;
+        }
+
+        .name {
+            color: var(--accent-orange);
+            font-size: 1.2rem;
+            text-align: center;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+
+        .job-title {
+            font-size: 1rem;
+            letter-spacing: 2px;
+            margin-bottom: 2rem;
+        }
+
+        .profile-img-container {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 3rem;
+            border: 3px solid #fff;
+        }
+
+        .profile-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .sidebar-section {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+
+        .sidebar-title {
+            font-size: 1.2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+
+        .sidebar-list {
+            list-style: none;
+            font-size: 0.85rem;
+        }
+
+        .sidebar-list li {
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .contact-list i {
+            color: var(--accent-orange);
+            margin-top: 3px;
+            width: 15px;
+        }
+
+        /* --- Rechte Spalte (Main Content) --- */
+        .main-content {
+            width: 65%;
+            padding: 3rem;
+        }
+
+        .section-title {
+            color: var(--primary-dark);
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .timeline {
+            border-left: 2px solid var(--accent-orange);
+            padding-left: 20px;
+            margin-left: 10px;
+        }
+
+        .timeline-item {
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .item-title {
+            color: var(--primary-dark);
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .item-date {
+            color: var(--text-gray);
+            font-size: 0.85rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .item-company {
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .item-location {
+            color: var(--text-gray);
+            font-size: 0.85rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .item-desc {
+            font-size: 0.85rem;
+            line-height: 1.4;
+            color: #555;
+        }
+
+        /* Responsive Design für Smartphones */
+        @media (max-width: 768px) {
+            .resume-wrapper {
+                flex-direction: column;
+            }
+            .sidebar, .main-content {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="resume-wrapper">
+        <!-- LINKE SPALTE -->
+        <aside class="sidebar">
+            <h1 class="header-cv">C V</h1>
+            <h2 class="name">MIGUEL SEPULVEDA</h2>
+            <h3 class="job-title">DEVELOPER</h3>
+
+            <div class="profile-img-container">
+                <!-- Ersetze den src-Link mit dem Pfad zu deinem echten Bild -->
+                <img src="https://via.placeholder.com/150" alt="Profilbild von Miguel Sepulveda">
+            </div>
+
+            <div class="sidebar-section">
+                <h4 class="sidebar-title">Kontakt</h4>
+                <ul class="sidebar-list contact-list">
+                    <li><i class="fas fa-globe"></i> <span>https://masbma.github.io/prototype</span></li>
+                    <li><i class="fas fa-map-marker-alt"></i> <span>Roseggergasse 44 - 46 / 11/13<br>1160 Wien</span></li>
+                    <li><i class="fas fa-envelope"></i> <span>masbma@gmail.com</span></li>
+                    <li><i class="fas fa-phone"></i> <span>0660 18 9 37 36</span></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h4 class="sidebar-title">Expertise</h4>
+                <ul class="sidebar-list">
+                    <li>Lösungsorientiertes Denken</li>
+                    <li>Hohe Lernbereitschaft</li>
+                    <li>Technische Affinität</li>
+                    <li>Teamfähig</li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h4 class="sidebar-title">EDV-Kenntnisse</h4>
+                <ul class="sidebar-list">
+                    <li>Webdesign: HTML, CSS, JavaScript</li>
+                    <li>Testing und Debugging</li>
+                    <li>C#, C++, MySQL</li>
+                    <li>ECDL Standard</li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h4 class="sidebar-title">Sprachen</h4>
+                <ul class="sidebar-list">
+                    <li>Deutsch, Spanisch: Erste Sprache C1</li>
+                    <li>Englisch: C1</li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h4 class="sidebar-title">Persönliche Angaben</h4>
+                <ul class="sidebar-list">
+                    <li>Staatsangehörigkeit: Österreich</li>
+                    <li>Geburtsort: Cali, Kolumbien</li>
+                    <li>Geburtstag: 29.11.1992</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- RECHTE SPALTE -->
+        <main class="main-content">
+            
+            <h2 class="section-title">Berufserfahrung</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="item-title">Projektassistent</div>
+                    <div class="item-date">11/2022 - 12/2024</div>
+                    <div class="item-company">Sourcing International</div>
+                    <div class="item-location">Peregringasse 2, 1090 Wien</div>
+                    <div class="item-desc">
+                        GUI-Tester,<br>
+                        Bug-Reporting,<br>
+                        Präsentationen,<br>
+                        Dokumentation von Daten,<br>
+                        Firmenunterstützte Fortbildungen
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="item-title">Prototyp Tester</div>
+                    <div class="item-date">6/2019</div>
+                    <div class="item-company">Lunatone GmbH</div>
+                    <div class="item-location">Paukerwerkstraße 5, 1210 Wien</div>
+                    <div class="item-desc">
+                        Dokumentation von programmierbaren Lichtschaltern,<br>
+                        Zusammenlöten von Kabeln zur zukünftigen, internen Verwendung
+                    </div>
+                </div>
+            </div>
+
+            <br><br>
+
+            <h2 class="section-title">Ausbildung</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="item-title">Javascriptkurs bei Udemy (Online)</div>
+                    <div class="item-date">1/2024 - laufend Wien</div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="item-title">Get Started Basics+ für Büro, Handel und Transport</div>
+                    <div class="item-date">7/2025 - 8/2025 Wien</div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="item-title">Lehre zum Applikationsentwickler - CODING</div>
+                    <div class="item-date">9/2020 - 9/2022 Wien</div>
+                    <div class="item-desc">
+                        Testing und Debugging,<br>
+                        Datenbank SQL,<br>
+                        Systemtechnik,<br>
+                        Webdesign,<br>
+                        HTML, MVC, CSS
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="item-title">Medieninformatik</div>
+                    <div class="item-date">3/2015 - 9/2016</div>
+                    <div class="item-company">Universität Wien</div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="item-title">Scientific Computing</div>
+                    <div class="item-date">3/2014 - 9/2015</div>
+                    <div class="item-company">Universität Wien</div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="item-title">Erich Fried Realgymnasium</div>
+                    <div class="item-date">9/2004 - 5/2014 Wien</div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="item-title">Volksschule Galileigasse</div>
+                    <div class="item-date">9/1999 - 6/2004 Wien</div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
